@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors and Background Images</title>
+
+    <style>
+        body {
+            background-image: url("https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=1600&q=80");
+            background-size: cover;
+            background-attachment: fixed;
+            color: #222222;
+            font-family: Arial, sans-serif;
+            margin: 30px;
+        }
+
+        h1 {
+            color: darkblue;
+            font-family: Georgia, serif;
+            font-size: 36px;
+            text-align: center;
+        }
+
+        h2 {
+            color: darkred;
+            font-family: Verdana, sans-serif;
+        }
+
+        .intro-text {
+            background-color: rgba(255, 255, 255, 0.9);
+            color: darkgreen;
+            font-family: "Courier New", monospace;
+            font-size: 18px;
+            padding: 15px;
+        }
+
+        #special-message {
+            background-color: rgba(255, 255, 255, 0.9);
+            color: purple;
+            font-family: "Trebuchet MS", sans-serif;
+            font-style: italic;
+            padding: 15px;
+        }
+
+        .background-element {
+            background-image: url("https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=1600&q=80");
+            background-position: center;
+            background-size: cover;
+            border: 3px solid white;
+            color: white;
+            font-family: Georgia, serif;
+            font-size: 22px;
+            margin: 20px 0;
+            padding: 50px 20px;
+            text-align: center;
+            text-shadow: 1px 1px 3px black;
+        }
+
+        li {
+            background-color: rgba(255, 255, 255, 0.9);
+            margin: 6px;
+            padding: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS Style Demonstration</h1>
+
+    <p class="intro-text">
+        This paragraph uses the <strong>intro-text</strong> class selector.
+        It demonstrates a different font family, font size, background color,
+        and text color.
+    </p>
+
+    <h2>Different Font Styles</h2>
+    <ul>
+        <li>Headings use Georgia and Verdana fonts.</li>
+        <li>The introduction uses Courier New.</li>
+        <li>This list uses the Arial font from the body selector.</li>
+    </ul>
+
+    <p id="special-message">
+        This paragraph uses the <strong>special-message</strong> ID selector
+        with italic text and a separate font style.
+    </p>
+
+    <div class="background-element">
+        Background image applied to a single element
+    </div>
+
+    <p class="intro-text">
+        The page background and the background of the box above are both set
+        with the CSS <strong>background-image</strong> property.
+    </p>
+</body>
+
+</html>
